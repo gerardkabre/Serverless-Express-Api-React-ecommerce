@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spotify app</title>
+  <link href="/assets/css/main.29266132.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="https://cdn.shopify.com/s/assets/external/app.js"></script>
+  <script>
+    window.apiKey = "<%= apiKey %>"
+    window.shopOrigin = "https://<%= shop %>"
+    const shopifyAppConfig = {
+      apiKey: window.apiKey,
+      shopOrigin: window.shopOrigin,
+    }
+    ShopifyApp.init(shopifyAppConfig);
+
+  </script>
+  <script type='text/javascript'>
+
+  </script>
+  <div id="root"></div>
+  <script type="text/javascript" src="/assets/js/main.d631ed11.js"></script>
+
+</body>
+
+</html>
